@@ -4,7 +4,6 @@ import com.example.hw9.repository.entity.Shop;
 import com.example.hw9.service.ObjectMapping;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -13,9 +12,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class ObjectMappingImpl implements ObjectMapping {
-
-    @Autowired
-    private ShopConverterImpl shopConverter;
 
     @Override
     public Shop jsonToShop(HttpServletRequest json) throws IOException { // more readable, use to small amount of data
