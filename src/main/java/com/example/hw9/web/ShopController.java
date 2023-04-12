@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.*;
 public class ShopController {
 
     @Autowired
-    public ShopService shopService;
+    private ShopService shopService;
 
     @Autowired
-    public ShopConverter shopConverter;
+    private ShopConverter shopConverter;
 
     @Autowired
-    public ObjectMapping objectMapping;
+    private ObjectMapping objectMapping;
 
     /*response without employeesCount, based on shopDto*/
 
